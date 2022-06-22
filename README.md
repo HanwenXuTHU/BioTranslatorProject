@@ -38,7 +38,7 @@ save_model = 'model/text_encoder.pth'
 # the path where you store the data
 graphine_repo = '/data/Graphine/dataset/'
 ```
-The training process will take several hours, please wait patiently or you can directly download the trained text encoder [model]<https://figshare.com/articles/dataset/Protein_Pathway_data_tar/20120447>.
+The training process will take several hours, please wait patiently or you can directly download the trained text encoder [model](https://figshare.com/articles/dataset/Protein_Pathway_data_tar/20120447).
 #### Section 2.4 New Functions Annotation
 You can run Protein/main.py to reproduce results of protein function prediction. We provide the command line interface.
 We also release the codes of baselines here. You can specify which method you like to run. First please download the Protein_Pathway dataset provided in our paper
