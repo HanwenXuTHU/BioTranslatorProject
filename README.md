@@ -28,7 +28,7 @@ BioTranslator/
 The first step of BioTranslator is to train a text encoder with contrastive learning on 225 ontologies data.
 
 #### Section 2.3 Train a text encoder
-First please download the Graphine(https://zenodo.org/record/5320310#.YUBtu55Kgox) dataset and unzip it. 
+First please download the [Graphine](https://zenodo.org/record/5320310#.YUBtu55Kgox) dataset and unzip it. 
 Then you need to specify the path where you unzip the Graphine dataset and the path you save the trained text encoder in TextEncoder/train_text_encoder.py.
 
 For example, 
@@ -38,7 +38,7 @@ save_model = 'model/text_encoder.pth'
 # the path where you store the data
 graphine_repo = '/data/Graphine/dataset/'
 ```
-The training process will take several hours, please wait patiently or you can directly download the trained text encoder model.
+The training process will take several hours, please wait patiently or you can directly download the trained text encoder [model]<https://figshare.com/articles/dataset/Protein_Pathway_data_tar/20120447>.
 #### Section 2.4 New Functions Annotation
 You can run Protein/main.py to reproduce results of protein function prediction. We provide the command line interface.
 We also release the codes of baselines here. You can specify which method you like to run. First please download the Protein_Pathway dataset provided in our paper
