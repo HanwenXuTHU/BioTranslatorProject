@@ -27,7 +27,7 @@ BioTranslator/
 ```
 The first step of BioTranslator is to train a text encoder with contrastive learning on 225 ontologies data.
 
-#### Section 2.3 Train a text encoder
+### Section 2.3 Train a text encoder
 First please download the [Graphine](https://zenodo.org/record/5320310#.YUBtu55Kgox) dataset and unzip it. 
 Then you need to specify the path where you unzip the Graphine dataset and the path you save the trained text encoder in TextEncoder/train_text_encoder.py.
 
@@ -39,7 +39,7 @@ save_model = 'model/text_encoder.pth'
 graphine_repo = '/data/Graphine/dataset/'
 ```
 The training process will take several hours, please wait patiently or you can directly download the trained text encoder [model](https://figshare.com/articles/dataset/Protein_Pathway_data_tar/20120447).
-#### Section 2.4 New Functions Annotation
+### Section 2.4 New Functions Annotation
 You can run Protein/main.py to reproduce results of protein function prediction. We provide the command line interface.
 We also release the codes of baselines here. You can specify which method you like to run. First please download the Protein_Pathway dataset provided in our paper
 and unzip it. The following command lines can reproduce our results in the zero shot task. For example, you can run BioTranslator on the GOA (Human) dataset.
@@ -89,7 +89,7 @@ Run the codes to perform the few shot prediction task.
 python Protein/main.py --method BioTranslator --dataset GOA_Human --data_repo /data/ProteinDataset --task few_shot --encoder_path model/text_encoder.pth --emb_path /embeddings
 ```
 The results of few shot task with blast will be saved in results/$method$_$dataset$_blast.pkl.
-#### Section 2.4 New Cell Type Discovery
+### Section 2.5 New Cell Type Discovery
 You can run SingleCell/main.py to reproduce results of new cell type annotation. 
 ```cmd
 python SingleCell/main.py --dataset muris_droplet --data_repo /data/sc_data --task same_dataset --encoder_path model/text_encoder.pth --emb_path /embeddings
@@ -117,7 +117,7 @@ You can also run the codes to reproduce the results of cross-dataset validation.
 ```cmd
 python SingleCell/main.py --dataset muris_droplet --data_repo /data/sc_data --task cross_dataset --encoder_path model/text_encoder.pth --emb_path /embeddings
 ```
-#### Section 2.5 Pathway Analysis
+### Section 2.6 Pathway Analysis
 In this section, we will show how to predict the nodes and links in a pathway.
 You can run Pathway/main.py to perform pathway analysis.
 ```cmd
