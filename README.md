@@ -5,6 +5,7 @@ BioTranslator is a cross-modal translator which can annotate biology instances o
 The codes here can reproduce the main results in BioTranslator paper, including zero-shot protein function prediction, zero-shot cell type prediction, and predict the nodes and edges of a gene pathway.
 BioTranslator takes a user-written textual description of the new discovery and then translates this description to a non-text biological data instance. Our tool frees scientists from limiting their analysis within predefined controlled vocabularies, thus accelerating new biomedical discoveries.
 
+**Update 08/05/2022:** We add the [fairseq](https://fairseq.readthedocs.io) version of BioTranslator. Please refer to the [BioTranslator_Fairseq/scripts/](https://github.com/HanwenXuTHU/BioTranslatorProject/tree/main/BioTranslator_Fairseq/scripts) for how to perform the protein function prediction and cell type discovery. 
 
 ## Section 2: Installation Tutorial
 ### Section 2.1: System Requirement
