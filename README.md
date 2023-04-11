@@ -7,6 +7,8 @@ BioTranslator takes a user-written textual description of the new discovery and 
 
 **Update 08/05/2022:** We add the [fairseq](https://fairseq.readthedocs.io) version of BioTranslator. Please refer to the [BioTranslator_Fairseq/scripts/](https://github.com/HanwenXuTHU/BioTranslatorProject/tree/main/BioTranslator_Fairseq/scripts) for how to perform the protein function prediction and cell type discovery. 
 
+**Update 04/11/2023:** We now released our [BioTranslator](https://biotranslator.readthedocs.io/en/latest/index.html) python package and tutorials!
+
 ## Section 2: Installation Tutorial
 ### Section 2.1: System Requirement
 BioTranslator is implemented using Python 3.7 in LINUX. BioTranslator requires torch==1.7.1+cu110, torchvision==0.8.2+cu110, numpy, pandas, sklearn, transformers, networkx, seaborn, tokenizers and so on.
