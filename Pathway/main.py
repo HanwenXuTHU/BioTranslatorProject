@@ -40,7 +40,7 @@ if __name__ == '__main__':
     parser.add_argument('--epoch', type=int, default=30, help='Training epochs.')
     parser.add_argument('--batch_size', type=int, default=32, help='Batch size')
     # The GPU ids
-    parser.add_argument('--gpu_ids', type=str, default='3', help='Specify which GPU you want to use')
+    parser.add_argument('--gpu_ids', type=str, default='0', help='Specify which GPU you want to use')
 
     args = parser.parse_args()
     args = args.__dict__
