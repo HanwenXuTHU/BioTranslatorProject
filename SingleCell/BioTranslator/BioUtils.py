@@ -945,8 +945,8 @@ def load_co_text(co_data_path):
                 obj = dict()
                 obj['text'] = ""
                 continue
-            elif line == '[Typedef]' and len(obj['text']) > 0:
-                if obj is not None:
+            elif line == '[Typedef]':
+                if obj is not None and len(obj['text']) > 0:
                     ont[obj['id']] = obj
                 obj = None
             else:
