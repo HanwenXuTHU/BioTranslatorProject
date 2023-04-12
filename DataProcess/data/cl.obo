@@ -22815,4 +22815,3 @@ property_value: IAO:0000117 "Terry Meehan" xsd:string
 holds_over_chain: BFO:0000050 develops_from
 is_transitive: true
 transitive_over: BFO:0000050
-
