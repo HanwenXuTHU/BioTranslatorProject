@@ -13,6 +13,11 @@ BioTranslator takes a user-written textual description of the new discovery and 
 ### Section 2.1: System Requirement
 BioTranslator is implemented using Python 3.7 in LINUX. BioTranslator requires torch==1.7.1+cu110, torchvision==0.8.2+cu110, numpy, pandas, sklearn, transformers, networkx, seaborn, tokenizers and so on.
 BioTranslator requires you have one GPU device to run the codes.
+You can install the packages by:
+```cmd
+python3.7 -m pip install --upgrade pip
+pip install -r requirements.txt
+``` 
 ### Section 2.2: How to use our codes
 The function annotation, cell type discovery and pathway analysis task in our paper are put in Protein, SingleCell and Pathway respectively.
 The main codes are in the BioTranslator folder and the struture of the project is
