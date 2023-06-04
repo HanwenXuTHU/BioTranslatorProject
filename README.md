@@ -63,7 +63,7 @@ working_space/
 ├── zero_shot/  
 │   ├── log/  
 │   ├── results/ 
-|   └── model/ # models
+|   └── model/
 └── few_shot/  
     ├── log/  
     ├── results/ 
