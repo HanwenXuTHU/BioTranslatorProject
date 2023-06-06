@@ -35,6 +35,9 @@ class BioLoader:
                                                                backup_file=cfg.backup_file)
 
     def load_text_emb(self, cfg):
+        if not os.path.exists(cfg.emb_path):
+            os.mkdir(cfg.emb_path)
+            print('Warning: We created the embedding folder: {}'.format(cfg.emb_path))
         if cfg.emb_name not in os.listdir(cfg.emb_path):
             gen_co_emb(cfg)
         cfg.text_embedding_file = cfg.emb_path + cfg.emb_name
